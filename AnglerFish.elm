@@ -26,7 +26,9 @@ anglerFish = group [
                                |> move (75,8),
                                
                     tailandarm |> addOutline (solid 2) black 
-                               |> subtract (rect 10 60 |> filled white |> move (-55,5)) 
+                               |> subtract (rect 10 60 
+                                            |> filled white 
+                                            |> move (-55,5)) 
                                |> scaleX 0.5
                                |> scaleY 0.7
                                |> rotate (degrees 20)
